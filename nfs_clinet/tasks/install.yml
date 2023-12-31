@@ -1,0 +1,7 @@
+---
+- name: install the package
+  yum:
+   name: nfs-utils
+   state: present
+  failed_when: ansible_hostname == "node1"
+...

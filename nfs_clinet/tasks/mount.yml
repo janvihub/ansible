@@ -1,0 +1,9 @@
+---
+- name: mount the mount point
+  mount:
+    path: /dir
+    src: 192.168.1.112:/nfs_share
+    opts: ro,nosuid
+    state: mounted
+    fstype: nfs
+  failed_when: ansible_hostname == "node1"

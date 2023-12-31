@@ -1,0 +1,6 @@
+---
+# tasks file for nfs_clinet
+- import_tasks: install.yml 
+- import_tasks: dir.yml 
+- import_tasks: firewall.yml
+- import_tasks: mount.yml 

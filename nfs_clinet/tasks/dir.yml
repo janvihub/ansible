@@ -1,0 +1,7 @@
+---
+- name: create the directory
+  file:
+   path: /dir
+   state: directory
+   mode: 0777
+  failed_when: ansible_hostname == "node1"
